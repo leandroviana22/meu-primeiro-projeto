@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
+
+:root {
+    --primary-color: #612674;
+    --secund-color: #f6f6f6;
+}
+
+html {
+    font-family: sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: "Oxygen", serif;
+}
+
+.MaxWidth {
+    max-width: 70.25em;
+    /*1124px // 16*/
+    margin: auto;
+    /*Pra centralizar*/
+}
+
+.top-header {
+    text-align: center;
+}
+
+.top-header_nav {
+    background-color: var(--primary-color);
+}
+
+.top-header_nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 0;
+}
+
+.top-header_nav a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    /*Não olha somente o espaço do texto e começa a olhar todo o elemento*/
+    padding: 1em;
+}
+
+.top-header_nav li:hover {
+    background-color: color-mix(in srgb, var(--primary-color), white 10%);
+}
+
+.HeroBanner {
+    text-align: center;
+    background-color: var(--secund-color);
+    padding: 1em;
+}
+
+.heroBanner_iconPlay {
+    height: 5em;
+    width: 5em;
+    display: none;
+}
+
+.heroBanner_iconPlay img {
+    width: 100%;
+}
+
+.heroBanner_title {
+    color: var(--primary-color);
+    font-size: 1.5em;
+    margin: 1.5em 0;
+}
+
+.heroBanner_subtitle {
+    font-size: 1em;
+    color: color-mix(in srgb, var(--primary-color), white 45%);
+    line-height: 1.5;
+}
+
+.HeroBanner_btn {
+    display: inline-block;
+    padding: .9em 1.5em;
+    background-color: #58c4c4;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+}
+
+.middleContent{
+    background-color: var(--secund-color);
+    text-align: center;
+    padding: 2em;
+}
+
+.middleContent a{
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.middleContent_title{
+    color: var(--primary-color);
+    text-transform: uppercase;
+    font-size: 1.25em;
+}
+
+.middleContent span[class^="icon-"]{
+    font-size: 3.5em;
+}
+
+.middleContent p{
+    color: black;
+    line-height: 1.5;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.col{
+    flex: 1 0 auto;
+    width: 100%;
+}
+
+.col-sm-12{
+    width: 100%;
+}
+
+.mainContent{
+    padding: 2em;
+}
+
+.mainContent p{
+    line-height: 1.2;
+}
+
+.mainContent_title{
+    color: var(--primary-color);
+    text-transform: uppercase;
+    font-weight: normal;
+    letter-spacing: .2em; /*Dar expaçamento de uma letra pra outra*/
+    font-size: 1.25em;
+}
+
+.mainContent .row{
+    row-gap: 4em;
+}
+
+.mainContent_img img{
+    width: 100%;
+}
+
+.footer{
+    background: #25303e;
+    color: #83969f;
+    text-align: center;
+    padding: 2em;
+}
